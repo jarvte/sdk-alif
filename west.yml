@@ -16,6 +16,8 @@ manifest:
   remotes:
     - name: alif
       url-base: https://github.com/alifsemi
+    - name: jarvte
+      url-base: https://github.com/jarvte
     # Other repository sources:
     - name: zephyrproject
       url-base: https://github.com/zephyrproject-rtos
@@ -27,8 +29,9 @@ manifest:
   projects:
 
     - name: zephyr
+      remote: jarvte
       repo-path: zephyr_alif
-      revision: 3e6f65c7c226c58a2c14d764d27e583cc94d6b80
+      revision: 50f5923cf9333b765fb142d63bf3e9c7ad0ffe1b
       import:
         # In addition to the zephyr repository itself,
         # Alif SDK fetches the needed projects
